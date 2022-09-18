@@ -1,6 +1,11 @@
 ---
 
 - hosts: all
-  gather_facts: false
+  gather_facts: False
+  connection: local
+
   tasks:
-    - ping:
+
+    - name: ping
+      shell: ping -c 1 -w 2 localhost
+      ignore_errors: true
