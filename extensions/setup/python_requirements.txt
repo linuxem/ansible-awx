@@ -8,3 +8,4 @@ ansible
 
 #Other packages
 boto
+ansible-core>=2.12.0b1 # not directly required, pinned by Snyk to avoid a vulnerability
